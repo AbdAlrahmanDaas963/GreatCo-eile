@@ -6,42 +6,23 @@ const bur2 = document.querySelector(".bur2");
 const bur3 = document.querySelector(".bur3");
 function navUp() {
     colla.setAttribute("class", "navbar-collapse collapse");
+    more()
     button.setAttribute("aria-expanded", "true");
 }
 function menu () {
     button.getAttribute("aria-expanded") == "true" ? x() : more();
-    function x(){
-        // bur1.setAttribute("class", "bur1d")
-        // bur2.setAttribute("class", "bur2d")
-        // bur3.setAttribute("class", "bur3d")
-        bur1.style.backgroundColor = "red";
-        bur2.style.backgroundColor = "green";
-        bur3.style.backgroundColor = "blue";
-    }
-    function more(){
-        // bur1.removeAttribute("class", "bur1d")
-        // bur2.removeAttribute("class", "bur2d")
-        // bur3.removeAttribute("class", "bur3d")
-        bur1.style.backgroundColor = "#F6FF00";
-        bur2.style.backgroundColor = "#F6FF00";
-        bur3.style.backgroundColor = "#F6FF00";
-    }
 }
-// if(button.attributes)
-
-// header list-icon
-// const icon = document.getElementById("iconMore");
-// let flipFlop = true;
-// icon.onclick = () => {
-//     if ( flipFlop ) {
-//         flipFlop = false
-//         console.log(`flipFlop`, flipFlop)
-//     } else {
-//         flipFlop = true
-//         console.log(`flipFlop`, flipFlop)
-
-//     }
-// }
+function x(){
+    bur1.style.transform= "translate( -50% , -50% ) rotate(45deg)";
+    bur2.style.opacity= "0";
+    bur3.style.transform= "translate( -50% , -50% ) rotate(-45deg)";
+}
+function more(){
+    bur1.style.transform= "translate( -50% , -12px )  rotate(0deg)";
+    bur2.style.transform= "translate( -50% , -50% )  rotate(0deg)";
+    bur2.style.opacity= "1";
+    bur3.style.transform= "translate( -50% , 10px ) rotate(0deg)";
+}
 
 // ----------------------------
 var imgArr=document.querySelectorAll(".home .home-background .background-item"); /* find all images for background home */

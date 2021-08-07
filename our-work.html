@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
+    <meta name="theme-color" content="#065992">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/our-work.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -17,10 +19,31 @@
 <!-- 
     browser-sync start --server --files --directore "*"
  -->
-<header class="header" id="headre">
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+        <button onclick="menu()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation" id="more"> 
+                <div class="bur1 bur1d bur"></div>
+                <div class="bur2 bur2d bur"></div>
+                <div class="bur3 bur3d bur"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" id="NavItem" onclick="navUp()"><a href="index.html"><span class="itemName">home<span class="line"></span></span></a></li>
+                <li class="nav-item" id="NavItem" onclick="navUp()"><a href="index.html#about-as"><span class="itemName">about us<span class="line"></span></span></a></li>
+                <li class="nav-item" id="NavItem" onclick="navUp()"><a href="index.html#our-services"><span class="itemName">our services<span class="line"></span></span></a></li>
+                <li class="nav-item" id="NavItem" onclick="navUp()"><a href="index.html#our-work"><span class="itemName">our work<span class="line"></span></span></a></li>
+                <li class="nav-item" id="NavItem" onclick="navUp()"><a href="index.html#testimonial"><span class="itemName">testimonials<span class="line"></span></span></a></li>
+                <li class="nav-item" id="NavItem" onclick="navUp()"><a href="index.html#contact-us"><span class="itemName itemNameLast">contanct us</span></a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- <header class="header" id="headre">
     <div class="layer"></div>
     <div class="header-content">
-        <a href="index.html"><div class="header-icon"><img src="./images/gREATcO LOGO.png" alt="" srcset=""></div></a> <!-- ./header-icon-->
+        <a href="index.html"><div class="header-icon"><img src="./images/gREATcO LOGO.png" alt="" srcset=""></div></a> 
         <nav class="header-navbar">
             <div class="navbar-item">
                 <div class="navbar-child list">
@@ -33,11 +56,11 @@
                         <li><a href="index.html?#testimonial"><span>testimonials</span></a></li>
                         <li><a href="index.html?#contact-us"><span>contanct us</span></a></li>
                     </ul>
-                </div> <!-- ./navbar-child -->
-            </div> <!-- ./navbar-item-->
-        </nav> <!-- ./header-navbar -->
+                </div> 
+            </div> 
+        </nav> 
     </div>
-</header> <!-- ./header-->
+</header>  -->
 
 
 <section class="work-contant">
@@ -163,5 +186,6 @@
 </footer> <!-- ./footer -->
 <script src="js/our-work.js"></script>
 <script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

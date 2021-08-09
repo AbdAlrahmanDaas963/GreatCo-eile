@@ -1,3 +1,10 @@
+// 
+function mount(){
+    document.getElementById("home").style.height = `${window.innerHeight}px`;
+    // document.getElementById("home").style.height = "700px";
+    console.log(`window.innerHeight`, `${window.innerHeight}px`)
+}
+// 
 // menu button
 const button = document.getElementById("more");
 const colla = document.getElementById("navbarSupportedContent");

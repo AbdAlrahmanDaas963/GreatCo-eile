@@ -54,6 +54,12 @@ a{
     height: 50px;
     padding: 0;
     position: relative;
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.445);
+}
+.navbar-toggler:focus{
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.445);
 }
 .bur{
     position: absolute;
@@ -61,7 +67,7 @@ a{
     height: 2px;
     border-radius: 20px;
     transition: all .2s linear;
-    background-color: #F6FF00;
+    background-color: #ffffff;
     top: 50%;
     left: 50%;
 }
@@ -104,7 +110,7 @@ a{
 }
 .itemNameLast{
     padding:10px 20px;
-    border: 2px solid greenyellow;
+    border: 2px solid #F6FF00;
     border-radius: 10px;
 }
 .itemNameLast:hover{
@@ -156,6 +162,11 @@ a{
     }
     .navbar-collapse{
         margin-right: -145px;
+    }
+}
+@media only screen and ( min-width : 990px ) and ( max-width : 1100px ) {
+    .navbar .container .navbar-collapse ul{
+        width: auto;
     }
 }
 /* abd */
@@ -247,7 +258,7 @@ a{
     transform:scale(1,1);
 } */
 .drop-list li:last-child .itemName{
-    border: 2px solid greenyellow;
+    border: 2px solid #f6ff00;
     border-radius: 10px;
     padding:10px 20px;
     transition:background-color 0.2s
@@ -334,7 +345,7 @@ a{
         color: white !important;
     }
     .drop-list a li:last-child span{
-        border: 2px solid greenyellow;
+        border: 2px solid #f6ff00;
         border-radius: 10px;
         padding:10px 20px;
     }
@@ -363,7 +374,7 @@ a{
     display: grid;
     align-items: center;
     position: relative;
-    top:-75px;
+    /* top:-75px; */
 }
 .home-background{
     position: absolute;
@@ -630,7 +641,7 @@ a{
     display: flex;
     align-items: center;
     padding:0px 0px 0px 0px;
-    top:-75px;
+    /* top:-75px; */
     position: relative;
     overflow: hidden;
 }
